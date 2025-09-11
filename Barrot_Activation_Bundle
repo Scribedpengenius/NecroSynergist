@@ -1,0 +1,14 @@
+NecroSynergist/
+├── index.html
+├── api/
+│   ├── synergy.js
+│   ├── subscribe.js
+│   └── barrotdev.js
+├── gpts/
+│   └── codex/
+│       └── handler.js
+├── core/
+│   ├── heart.js
+│   └── brain.js
+├── .env.example
+└── README.md
