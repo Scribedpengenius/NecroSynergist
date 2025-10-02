@@ -1,0 +1,5 @@
+mkdir -p .github/workflows
+mv pages/.github/workflows/override-tier-sync.yml .github/workflows/override-tier-sync.yml
+git add .github/workflows/override-tier-sync.yml
+git commit -m "Move workflow to root level"
+git push origin override-tier-visuals
