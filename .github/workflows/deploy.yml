@@ -1,0 +1,24 @@
+name: NecroSynergist Sovereign Push
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Barrot Sovereign Agent"
+          git config --global user.email "barrot@override.local"
+
+      - name: Push Tier 51 Bundle
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git add .
+          git commit -m "Barrot Tier 51: Sovereign Launch – TraceID ATL-HURFL-OMNIPLASM-100125"
+          git push https://x-access-token:${GH_TOKEN}@github.com/Scribedpengenius/NecroSynergist.git main
