@@ -1,8 +1,8 @@
-TOKEN="D1mcXAmEjUq5GJNUexeHSyH0" \
-PROJ="jiYjU92W5BreAXTw0YXwRBmI" \
-read -p "Paste VERCEL_ORG_ID (or your Vercel username): " ORG; \
-gh secret set VERCEL_TOKEN -b"$TOKEN"; \
-gh secret set VERCEL_ORG_ID -b"$ORG"; \
-gh secret set VERCEL_PROJECT_ID -b"$PROJ"; \
-echo "✅ Barry added all 3 secrets to this repo"
-
+﻿{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
